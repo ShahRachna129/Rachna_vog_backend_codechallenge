@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rachna_vog_backend_codechallenge", "Rachna_vog_backend_codechallenge\Rachna_vog_backend_codechallenge.csproj", "{334EFBE7-DDD6-4DF9-9A5B-F03BF26DCCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API", "VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{99D347F1-7785-4E37-8B03-BD44D8E6F377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{334EFBE7-DDD6-4DF9-9A5B-F03BF26DCCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334EFBE7-DDD6-4DF9-9A5B-F03BF26DCCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334EFBE7-DDD6-4DF9-9A5B-F03BF26DCCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334EFBE7-DDD6-4DF9-9A5B-F03BF26DCCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D347F1-7785-4E37-8B03-BD44D8E6F377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D347F1-7785-4E37-8B03-BD44D8E6F377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D347F1-7785-4E37-8B03-BD44D8E6F377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D347F1-7785-4E37-8B03-BD44D8E6F377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDE3D0AF-E4E5-43A2-A832-38E00BB5C7CC}
+	EndGlobalSection
+EndGlobal
