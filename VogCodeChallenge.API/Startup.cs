@@ -1,15 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using VogCodeChallenge.API.Services;
 
 namespace VogCodeChallenge.API
 {
@@ -26,6 +22,10 @@ namespace VogCodeChallenge.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddMvc().SetCompatibilityVersion
+            (CompatibilityVersion.Version_3_0);
+                        services.AddScoped<IDataService, DataService>();
+                services.AddDbContext<EmployeeDbContext>(options => options.UseInMemoryDatabase(databaseName: "EmployeesDb"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
