@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿using System.ComponentModel.DataAnnotations.Schema;
 namespace VogCodeChallenge.API.Models
 {
     public class Employee
@@ -15,6 +10,6 @@ namespace VogCodeChallenge.API.Models
         public string EmpJobTitle { get; set; }
         public string EmpAddress { get; set; }
         [ForeignKey("DeptCode")]
-        public Department  EmpDept { get; set; }
+        public Department Department { get; set; }
     }
 }

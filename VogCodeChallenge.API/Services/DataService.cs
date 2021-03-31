@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using VogCodeChallenge.API.Models;
 
 namespace VogCodeChallenge.API.Services
@@ -23,10 +22,11 @@ namespace VogCodeChallenge.API.Services
             return employees.Find(x => x.EmpId.Equals(empid));
         }
 
-        public IEnumerable<Employee> GetEmpByDept(int deptid)
+        public Department GetEmpByDept(int deptid)
         {
-            Department dept = departments.Find(x => x.DeptCode.Equals(deptid));
-            return dept != null ? dept.DepartmentWiseEmployees : Enumerable.Empty<Employee>();
+           Department dept = departments.Find(x => x.DeptCode.Equals(deptid));
+
+            return dept != null ? dept : null;
         }
         public void SettingDataForEmployee(List<Employee> lstEmployees) { this.employees = lstEmployees; }
         public void SettingDataForDepartments(List<Department> lstDepartments) { this.departments = lstDepartments; }

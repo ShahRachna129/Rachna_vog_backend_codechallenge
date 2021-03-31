@@ -13,10 +13,10 @@ namespace TestModule
             "Jeffrey",
             "John",
         };
-        static void Main()
-        {
-            var ids = NamesList;
-            var getStudentInfo = NamesList.Where(s => s.StartsWith("J")).ToList();
-        }
+        //static void Main()
+        //{
+        //    var ids = NamesList;
+        //    var getStudentInfo = NamesList.Where(s => s.StartsWith("J")).ToList();
+        //}
     }
 }

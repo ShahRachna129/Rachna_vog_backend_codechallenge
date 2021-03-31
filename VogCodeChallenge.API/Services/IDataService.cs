@@ -8,9 +8,9 @@ namespace VogCodeChallenge.API.Services
         IEnumerable<Employee> GetAll();
         IList<Employee> ListAll();
         Employee GetEmpById(int empId);
-        IEnumerable<Employee> GetEmpByDept(int deptId);
+       Department GetEmpByDept(int deptId);
 
-      void SettingDataForEmployee(List<Employee> employees);
+       void SettingDataForEmployee(List<Employee> employees);
        void SettingDataForDepartments(List<Department> departments);
     }
 }

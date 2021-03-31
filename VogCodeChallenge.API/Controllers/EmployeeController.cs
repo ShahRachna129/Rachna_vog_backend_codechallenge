@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using VogCodeChallenge.API.Models;
 using VogCodeChallenge.API.Services;
-
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace VogCodeChallenge.API.Controllers
@@ -39,12 +38,11 @@ namespace VogCodeChallenge.API.Controllers
         }
 
         // GET api/employee/department/1
-        [Route("/deparment/{departmentId}")]
-        [HttpGet]
-
-        public ActionResult<IEnumerable<Employee>> Deparment(int departmentId)
+        //[Route]
+        [HttpGet("department/{id}")]
+        public ActionResult<Employee> GetDeparment(int id)
         {
-            var data = _dataservice.GetEmpByDept(departmentId);
+            var data = _dataservice.GetEmpByDept(id);
             if (data != null)
                 return Ok(data);
             return NotFound();
